@@ -235,3 +235,35 @@ body {
     animation: scale 3s linear infinite;
     z-index: -1;
 }
+
+/* For tablets (width between 600px and 1024px) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .shadow {
+      width: 350px;
+      height: 20px;
+      left: 14rem;
+      bottom: 250px;
+  }
+}
+
+/* For phones (width up to 599px) */
+@media only screen and (max-width: 599px) {
+  .shadow {
+      width: 300px;
+      height: 15px;
+      left: 2rem;
+      bottom: 100px;
+  }
+}
+
+
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0.84);
+  }
+}
